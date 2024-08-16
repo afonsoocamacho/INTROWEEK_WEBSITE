@@ -1,0 +1,77 @@
+/* General styles */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.leaderboard-title {
+  text-align: center;
+  font-family: "Lemon Mocktail Regular";
+  color: #fa3155; /* Matching the red color from the header */
+  padding-top: 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.leaderboard-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: separate; /* Ensure border-collapse is set to separate */
+  border-spacing: 0; /* Ensure no spacing between borders */
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden; /* Ensure content respects border radius */
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 2px solid #f9f6ee; /* Adds border to cells */
+}
+
+.leaderboard-row {
+  background-color: #fa3155; /* Matching the red color */
+  color: white;
+  height: 60px;
+}
+
+.stage-cell {
+  padding: 15px;
+  text-align: center;
+  font-family: "Lemon Mocktail Regular";
+  width: 19%;
+  background-color: #de2647; /* Slightly darker shade for stage cells */
+}
+
+.team-cell {
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Highlighted row style */
+.leaderboard-row.highlighted-row {
+  background-color: rgba(250, 49, 85, 0.7); /* Tomato color for highlighting */
+  color: white;
+}
+
+.leaderboard-row.highlighted-row .stage-cell,
+.leaderboard-row.highlighted-row .team-cell {
+  background-color: rgba(
+    250,
+    49,
+    85,
+    0.7
+  ); /* Ensure both cells inherit the highlighting color */
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .leaderboard-table {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .leaderboard-table {
+    width: 60%;
+  }
+}

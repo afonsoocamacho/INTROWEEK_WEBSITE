@@ -1,0 +1,142 @@
+.corpo {
+  min-height: 95vh;
+}
+.admin-header {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.team-view {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-selector {
+  text-align: center;
+  margin-bottom: 10px;
+  max-width: 30%;
+}
+
+.total-points {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #f9f6ee;
+  background-color: #fa3155;
+  padding: 10px;
+  border-radius: 5px;
+}
+.points-input {
+  max-width: 40px;
+}
+.admin-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.PointsChange {
+  width: 50px;
+  text-align: center;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button.approved {
+  background-color: lightgreen;
+  color: white;
+}
+
+button.not-approved {
+  background-color: lightcoral;
+  color: white;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 700px;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
+
+.approve-button {
+  background-color: green;
+  color: white;
+}
+
+.reject-button {
+  background-color: red;
+  color: white;
+}
+
+.pointstotal {
+  font-weight: 500;
+  font-size: 20px;
+}
+.pointstotal span {
+  font-weight: 700;
+  background-color: #fa3155;
+  padding: 2px 4px;
+  border-radius: 5px;
+  color: #fff;
+}

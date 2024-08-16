@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f6ee;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@font-face {
+  font-family: "Lemon Mocktail Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lemon Mocktail Regular"),
+    url("../public/fonts/LemonMocktail-2OJRl.woff") format("woff");
+}

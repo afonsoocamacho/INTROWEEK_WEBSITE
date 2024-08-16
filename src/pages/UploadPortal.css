@@ -1,0 +1,101 @@
+.UploadPortal {
+  text-align: left;
+  color: #fa3155;
+  padding-left: 20px;
+  margin-top: 30px;
+  min-height: calc(100vh - 83px);
+}
+
+.UploadPortal h1 {
+  font-family: Helvetica Neue;
+}
+
+.UploadPortal p {
+  font-family: Helvetica Neue;
+  line-height: 23px;
+}
+
+.UploadPortal h2 {
+  font-family: Helvetica Neue;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+}
+
+.uploadeddocs {
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+.uploadeddocs table {
+  background-color: rgba(250, 49, 85, 0.41);
+  width: calc(100vw - 40px);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.uploadeddocs table td {
+  border: 0;
+}
+
+.thumbnails {
+  padding: 15px 15px 0px 15px;
+}
+
+.thumbnail {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.last-row {
+  padding-bottom: 15px;
+}
+
+.uploaded-doc-row:last-child {
+  padding-bottom: 15px;
+}
+
+/* Ensures the video element scales while maintaining aspect ratio */
+.responsive-video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

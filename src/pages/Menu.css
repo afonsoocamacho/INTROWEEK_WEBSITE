@@ -1,0 +1,83 @@
+/* Header container */
+.Menu {
+  min-height: 100vh;
+}
+.header {
+  background-color: #f9f6ee; /* Dark background color */
+  color: #fa3155; /* White text color */
+  padding: 20px; /* Add padding to the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Header text */
+.header h1 {
+  margin: 0; /* Remove margin */
+  font-family: "Lemon Mocktail Regular";
+  font-size: 36px;
+  font-weight: 400;
+}
+.Logo {
+  color: #fa3155;
+  text-decoration: none;
+  font-family: "Lemon Mocktail Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 39.07px;
+  text-align: center;
+}
+.Link {
+  color: #fa3155;
+  text-decoration: none;
+  font-family: "Helvetica Neue";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39.07px;
+  text-align: center;
+}
+.hamburger-menu {
+  font-size: 36px;
+  margin-top: -10px;
+  font-weight: 700;
+}
+.hamburger-menu a {
+  text-decoration: none;
+  color: #fa3155;
+}
+ul {
+  list-style-type: none;
+  padding-left: 19px;
+}
+li {
+  width: 350px;
+  text-align: left;
+  align-items: center; /* Vertically center the text */
+  height: 80px;
+  top: 160px;
+  left: 19px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.btn-emergency {
+  margin-top: 60px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background: #50cbc4;
+  width: 260px;
+  height: 80px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  border: none;
+}
+.btn-emergency a {
+  font-family: Helvetica Neue;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39.07px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}

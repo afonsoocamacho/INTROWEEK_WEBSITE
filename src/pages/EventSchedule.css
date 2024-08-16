@@ -1,0 +1,81 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+.schedule-body {
+  min-height: 100vh;
+}
+
+.schedule-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.schedule-header h1 {
+  margin: 0 5px;
+}
+
+.day-indicator {
+  font-size: 1.5em;
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0 5px;
+  color: #fa3155;
+}
+
+.arrow-button {
+  color: #fa3155;
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.schedule-table {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border-collapse: separate;
+  overflow: hidden;
+  font-family: "Helvetica Neue", sans-serif;
+  border-radius: 20px;
+  table-layout: fixed; /* Ensure fixed table layout */
+}
+
+.schedule-table th,
+.schedule-table td {
+  width: 33.33%; /* Equal width for each column */
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #f9f6ee;
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  word-break: break-word;
+  font-family: "Helvetica Neue", sans-serif;
+  white-space: normal; /* Ensure text wraps to the next line */
+}
+
+.schedule-table th {
+  background-color: #fa3155;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.schedule-table tr:nth-child(odd) {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.schedule-table tfoot th {
+  background-color: #fa3155; /* Optional: background color for footer */
+  color: white; /* Optional: text color for footer */
+  padding: 10px;
+  text-align: left;
+  height: 20px;
+  border-radius: 0px 0px 20px 20px;
+  border-top: 2px solid #f9f6ee; /* Optional: add border at the top of the footer */
+}

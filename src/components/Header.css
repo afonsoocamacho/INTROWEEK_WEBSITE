@@ -1,0 +1,64 @@
+/* header.css */
+
+/* Header container */
+.header {
+  background-color: #f9f6ee; /* Dark background color */
+  color: #fa3155; /* White text color */
+  padding: 20px; /* Add padding to the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Header text */
+.header h1 {
+  margin: 0; /* Remove margin */
+  font-family: "Lemon Mocktail Regular";
+  font-size: 36px;
+  font-weight: 400;
+}
+.Logo {
+  color: #fa3155;
+  text-decoration: none;
+  font-family: "Lemon Mocktail Regular";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 39.07px;
+  text-align: center;
+}
+.Link {
+  color: #fa3155;
+  text-decoration: none;
+}
+.hamburger-menu {
+  font-size: 36px;
+  margin-top: -10px;
+}
+.hamburger-menu link {
+  text-decoration: none;
+}
+/* Navigation links */
+.nav-links {
+  list-style-type: none; /* Remove bullets from list */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+.nav-links li:last-child {
+  margin-right: 0; /* Remove margin from last list item */
+}
+
+.nav-links a {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+  color: #ffcc00; /* Change text color on hover */
+}
