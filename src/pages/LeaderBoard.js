@@ -13,7 +13,7 @@ function LeaderBoard() {
     const fetchLeaderboard = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/leaderboard"
+          "https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/leaderboard"
         );
         console.log("Fetched leaderboard data:", response.data); // Debugging log
         setLeaderboard(response.data);
