@@ -45,12 +45,16 @@
   text-decoration: none;
   color: #fa3155;
 }
+link{
+  color: #fa3155;
+}
 ul {
   list-style-type: none;
   padding-left: 19px;
 }
 li {
   width: 350px;
+  color: #fa3155;
   text-align: left;
   align-items: center; /* Vertically center the text */
   height: 80px;
