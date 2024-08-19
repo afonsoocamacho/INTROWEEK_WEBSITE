@@ -192,7 +192,7 @@ const PopUp = ({ onClose }) => {
                   </option>
                   {activities.map((activity) => (
                     <option key={activity.Task_ID} value={activity.Task_ID}>
-                      {activity.Task_Type_ID} {activity.Task_name}
+                      {activity.Task_Type_ID} - {activity.Task_name}
                     </option>
                   ))}
                 </select>
