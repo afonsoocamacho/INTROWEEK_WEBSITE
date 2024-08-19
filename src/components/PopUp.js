@@ -30,7 +30,7 @@ const PopUp = ({ onClose }) => {
     const fetchActivityTypes = async () => {
       try {
         const response = await fetch(
-          "http://localhost:8000/api/activity-types"
+          "https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/activity-types"
         );
         const data = await response.json();
         setActivityTypes(data);
@@ -48,7 +48,7 @@ const PopUp = ({ onClose }) => {
       const fetchActivities = async () => {
         try {
           const response = await fetch(
-            `http://localhost:8000/api/activities?type=${activityType}`
+            `https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/activities?type=${activityType}`
           );
           const data = await response.json();
           setActivities(data);
@@ -135,7 +135,7 @@ const PopUp = ({ onClose }) => {
     console.log("Form Data:", formData); // Log FormData for debugging
 
     try {
-      const response = await fetch("http://localhost:8000/api/upload", {
+      const response = await fetch("https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/upload", {
         method: "POST",
         headers: {
           "x-team-id": TeamID, // Ensure this is being set correctly
