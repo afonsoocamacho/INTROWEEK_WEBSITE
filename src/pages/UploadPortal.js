@@ -5,7 +5,7 @@ import "./UploadPortal.css";
 import MetaTags from "../components/MetaTags";
 import axios from "axios";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://introweek-runcmd-website-e0032d4f624f.herokuapp.com";
 const DEFAULT_IMAGE_URL =
   "https://via.placeholder.com/150/CCCCCC/808080?text=No+Image";
 
