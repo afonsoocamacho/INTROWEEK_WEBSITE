@@ -53,7 +53,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       console.log("Sending login request...");
-      const response = await axios.post("http://localhost:8000/api/login", {
+      const response = await axios.post("https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/login", {
         teamName,
         teamPass,
       });
