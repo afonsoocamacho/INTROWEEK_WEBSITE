@@ -32,6 +32,11 @@ body {
   cursor: pointer;
 }
 
+.arrow-button.disabled-arrow {
+  color: rgba(128, 128, 128, 0.4);
+  cursor: not-allowed;
+}
+
 .schedule-table {
   width: 90%;
   margin: 0 auto;

@@ -16,7 +16,7 @@ const Login = () => {
     const storedTeamType = localStorage.getItem("teamType");
     const storedTeamID = localStorage.getItem("teamID");
     const loginTimestamp = localStorage.getItem("loginTimestamp");
-    const expirationTime = 60 * 1000; // 1 minute in milliseconds, adjust as needed
+    const expirationTime = 30 * 60 * 1000; // 1 minute in milliseconds, adjust as needed
 
     if (storedTeamName && storedTeamType && storedTeamID && loginTimestamp) {
       const currentTime = new Date().getTime();
@@ -53,10 +53,13 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       console.log("Sending login request...");
-      const response = await axios.post("http://localhost:8000/api/login", {
-        teamName,
-        teamPass,
-      });
+      const response = await axios.post(
+        "https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/login",
+        {
+          teamName,
+          teamPass,
+        }
+      );
 
       console.log("Response from server:", response.data);
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./AdminReview.css";
 import axios from "axios";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://introweek-runcmd-website-e0032d4f624f.herokuapp.com";
 
 const AdminReview = () => {
   const [teams, setTeams] = useState([]);

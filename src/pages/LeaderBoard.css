@@ -2,6 +2,9 @@
 body {
   font-family: Helvetica, sans-serif;
 }
+.leaderboard-container {
+  min-height: 100vh;
+}
 
 .leaderboard-title {
   text-align: center;

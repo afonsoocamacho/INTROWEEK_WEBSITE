@@ -175,3 +175,9 @@ button[type="button"]:hover {
 .note small {
   color: rgba(250, 49, 85, 1);
 }
+
+.file-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

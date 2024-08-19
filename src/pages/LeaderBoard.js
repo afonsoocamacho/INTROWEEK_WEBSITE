@@ -13,7 +13,7 @@ function LeaderBoard() {
     const fetchLeaderboard = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/leaderboard"
+          "https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/leaderboard"
         );
         console.log("Fetched leaderboard data:", response.data); // Debugging log
         setLeaderboard(response.data);
@@ -31,25 +31,28 @@ function LeaderBoard() {
     <>
       <MetaTags />
       <Header />
-      <h1 className="leaderboard-title">Leader board</h1>
-      <table className="leaderboard-table">
-        <tbody>
-          {leaderboard.map((entry, index) => {
-            let rowClass = "leaderboard-row";
-            console.log("Comparing", entry.Team_ID, "with", loggedInTeamID); // Debugging log
-            if (entry.Team_ID === loggedInTeamID)
-              rowClass += " highlighted-row"; // Highlight the logged-in team
+      <div className="leaderboard-container">
+        <h1 className="leaderboard-title">Leader board</h1>
+        <table className="leaderboard-table">
+          <tbody>
+            {leaderboard.map((entry, index) => {
+              let rowClass = "leaderboard-row";
+              console.log("Comparing", entry.Team_ID, "with", loggedInTeamID); // Debugging log
+              if (entry.Team_ID === loggedInTeamID)
+                rowClass += " highlighted-row"; // Highlight the logged-in team
 
-            return (
-              <tr key={index} className={rowClass}>
-                <td className="stage-cell">{`Stage ${index + 1}`}</td>
-                <td className="team-cell">{entry.Team_name}</td>
-                {/*   <td className="points-cell">{entry.Team_points}</td> */}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+              return (
+                <tr key={index} className={rowClass}>
+                  <td className="stage-cell">{`Stage ${index + 1}`}</td>
+                  <td className="team-cell">{entry.Team_name}</td>
+                  {/*   <td className="points-cell">{entry.Team_points}</td> */}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
       <PopUpButton />
     </>
   );

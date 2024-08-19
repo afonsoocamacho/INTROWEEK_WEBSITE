@@ -26,9 +26,9 @@ const profiles = [
     imageUrl: "img/staff/Tim_image.jpg", // Replace with actual image URL
   },
   {
-    name: "Olya Mykhailovska",
+    name: "Lene Andersen",
     description: "Introweek Committee Member",
-    imageUrl: "img/staff/Olya_image.jpg", // Replace with actual image URL
+    imageUrl: "img/staff/Lene_image.jpg", // Replace with actual image URL
   },
   {
     name: "Chelsea Ohenhen",
@@ -51,9 +51,9 @@ const profiles = [
     imageUrl: "img/staff/Niels_image.jpg", // Replace with actual image URL
   },
   {
-    name: "Lene Andersen",
+    name: "Olya Mykhailovska",
     description: "Introweek Committee Member",
-    imageUrl: "img/staff/Lene_image.jpg", // Replace with actual image URL
+    imageUrl: "img/staff/Olya_image.jpg", // Replace with actual image URL
   },
   {
     name: "Nathalie Schaper",

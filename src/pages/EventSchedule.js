@@ -141,12 +141,20 @@ const EventSchedule = () => {
       <Header />
       <div className="schedule-body">
         <div className="schedule-header">
-          <button className="arrow-button" onClick={handlePreviousDay}>
+          <button
+            className={`arrow-button ${day === 1 ? "disabled-arrow" : ""}`}
+            onClick={handlePreviousDay}
+            disabled={day === 1}
+          >
             &#8592;
           </button>
           <h1>Line Up</h1>
           <div className="day-indicator">Day {day}</div>
-          <button className="arrow-button" onClick={handleNextDay}>
+          <button
+            className={`arrow-button ${day === 3 ? "disabled-arrow" : ""}`}
+            onClick={handleNextDay}
+            disabled={day === 3}
+          >
             &#8594;
           </button>
         </div>
