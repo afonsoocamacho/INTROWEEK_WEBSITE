@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414.94 358.79">
   <defs>
-    <style>
+   <style>
+      /* Default color for light mode */
       .cls-1 {
-        fill: #dedfe0;
+        fill: #dedfe0; /* Light mode color */
         stroke-width: 0px;
+      }
+
+      /* Dark mode color */
+      @media (prefers-color-scheme: dark) {
+        .cls-1 {
+          fill: #333; /* Dark mode color */
+        }
       }
     </style>
   </defs>
