@@ -166,16 +166,6 @@ const PopUp = ({ onClose }) => {
         {
           method: "POST",
           headers: {
-            "x-team-id": TeamID,
-          },
-          body: formData,
-        }
-      );
-      const response = await fetch(
-        "https://introweek-runcmd-website-e0032d4f624f.herokuapp.com/api/upload",
-        {
-          method: "POST",
-          headers: {
             "x-team-id": TeamID, // Ensure this is being set correctly
           },
           body: formData,
