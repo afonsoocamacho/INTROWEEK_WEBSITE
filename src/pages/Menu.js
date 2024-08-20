@@ -18,7 +18,7 @@ function Menu() {
           <BackBtn />
         </div>
       </div>
-      <div>
+      <div className="menulist">
         <ul>
           <li>
             <Link to="/UploadPortal" className="Link menulink">
