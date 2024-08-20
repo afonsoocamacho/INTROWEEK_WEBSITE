@@ -27,6 +27,10 @@
   line-height: 39.07px;
   text-align: center;
 }
+.menulist{
+position: absolute;
+  z-index: 500;
+}
 .Link {
   color: #fa3155;
   text-decoration: none;
@@ -35,7 +39,6 @@
   font-weight: 500;
   line-height: 39.07px;
   text-align: center;
-  position: absolute;
   z-index: 10;
 }
 .hamburger-menu {
