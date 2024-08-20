@@ -21,17 +21,17 @@ function Menu() {
       <div>
         <ul>
           <li>
-            <Link to="/UploadPortal" className="Link">
+            <Link to="/UploadPortal" className="Link menulink">
               Upload Portal
             </Link>
           </li>
           <li>
-            <Link to="/EventSchedule" className="Link">
+            <Link to="/EventSchedule" className="Link menulink">
               Event Schedule
             </Link>
           </li>
           <li>
-            <Link to="/LeaderBoard" className="Link">
+            <Link to="/LeaderBoard" className="Link menulink">
               Leader Board
             </Link>
           </li>
@@ -39,14 +39,14 @@ function Menu() {
             <a
               href="https://newuniversity-my.sharepoint.com/:f:/r/personal/zwaantje_blumel_student_nhlstenden_com/Documents/Introweek%20pictures/Student%20uploads?csf=1&web=1&e=MHm7xA"
               target="_blank"
-              className="Link"
+              className="Link menulink"
               rel="noreferrer"
             >
               Photo Drive
             </a>
           </li>
           <li>
-            <Link to="/Staff" className="Link">
+            <Link to="/Staff" className="Link menulink">
               Staff
             </Link>
           </li>
