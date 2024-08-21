@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414.94 358.79">
   <defs>
-   <style>
+<style type="text/css">
       /* Default color for light mode */
       .cls-1 {
         fill: #dedfe0; /* Light mode color */
